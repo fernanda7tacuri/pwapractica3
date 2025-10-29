@@ -1,0 +1,161 @@
+/* 🎨 --- ESTILOS GENERALES --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fef6e4; /* fondo beige pastel */
+  color: #172c66; /* azul grisáceo para texto */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* 🏷️ --- CABECERA --- */
+header {
+  background-color: #8bd3dd; /* celeste pastel */
+  color: #001858; /* azul oscuro elegante */
+  width: 100%;
+  padding: 30px 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+/* 🛍️ --- SECCIÓN DE PRODUCTOS --- */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+.tarjeta {
+  background-color: #ffffff; /* tarjetas blancas */
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.tarjeta h2 {
+  color: #001858;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.descripcion {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.precio {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f582ae; /* rosa pastel */
+  margin-bottom: 10px;
+}
+
+/* 🛒 --- BOTÓN AGREGAR AL CARRITO --- */
+.btn-agregar {
+  background-color: #8bd3dd; /* celeste pastel */
+  color: #001858;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-weight: 600;
+}
+
+.btn-agregar:hover {
+  background-color: #f582ae; /* rosa pastel */
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* 🛍️ --- CARRITO DE COMPRAS --- */
+.carrito {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+.carrito h2 {
+  color: #001858;
+  margin-bottom: 15px;
+}
+
+#listaCarrito {
+  list-style: none;
+  padding: 0;
+}
+
+#listaCarrito li {
+  background-color: #fef6e4;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* ⚙️ --- PIE DE PÁGINA --- */
+footer {
+  background-color: #8bd3dd;
+  color: #001858;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+/* 📱 --- RESPONSIVE (móviles) --- */
+@media (max-width: 768px) {
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 85%;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+}
